@@ -182,7 +182,7 @@ li a:hover,
 .about-us-content {
   display: flex;
   gap: 2;
-  margin: 4rem;
+  margin: auto;
 }
 
 .about-us__image {
