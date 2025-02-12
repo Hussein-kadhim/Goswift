@@ -103,18 +103,6 @@ li a:hover,
   z-index: 2;
 }
 
-.hamburger {
-  display: flex;
-  cursor: pointer;
-  font-size: 1.8rem;
-  color: var(--text-light-color);
-  z-index: 3;
-}
-
-.hamburger i {
-  transition: opacity 0.3s ease-in-out;
-}
-
 .logo {
   font-size: 20px;
   font-weight: bold;
@@ -129,6 +117,10 @@ li a:hover,
   text-decoration: none;
   margin-inline-end: 10px;
   color: var(--text-light-color);
+}
+
+.hamburger {
+  display: none;
 }
 
 /* Hero section */
@@ -383,6 +375,18 @@ li a:hover,
     border: none;
     font-size: 30px;
     color: var(--color-white);
+  }
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: var(--text-light-color);
+    z-index: 3;
+  }
+
+  .hamburger i {
+    transition: opacity 0.3s ease-in-out;
   }
 
   .overlay::after {
