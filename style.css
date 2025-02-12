@@ -104,11 +104,15 @@ li a:hover,
 }
 
 .hamburger {
-  display: none;
+  display: flex;
   cursor: pointer;
   font-size: 1.8rem;
   color: var(--text-light-color);
   z-index: 3;
+}
+
+.hamburger i {
+  transition: opacity 0.3s ease-in-out;
 }
 
 .logo {
@@ -333,7 +337,7 @@ li a:hover,
 
   .hero-content {
     text-align: center;
-    z-index: 2;
+    z-index: 1;
     transition: z-index 0.3s ease-in-out;
   }
 
@@ -357,7 +361,7 @@ li a:hover,
     z-index: 3;
   }
 
-  .nav-links.show {
+  .nav-links.active {
     display: flex;
   }
 
@@ -369,14 +373,16 @@ li a:hover,
     transition: ease-in-out 0.4s;
   }
 
-  .hamburger {
+  #menu-toggle {
     display: block;
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 12px;
     z-index: 4;
     background: transparent;
     border: none;
+    font-size: 30px;
+    color: var(--color-white);
   }
 
   .overlay::after {
